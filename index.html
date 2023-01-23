@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Time tracking dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <div class="card">
+        <div class="part1">
+          <img src="./images/image-jeremy.png" alt="">
+          <div class="details">
+            <p>Report for</p>
+            <h2> Jeremy Robson</h2>
+          </div>
+        </div>
+        <div class="part2">
+          <a class="btn daily active" href="#"> Daily</a>
+          <a class="btn weekly" href="#">Weekly</a>
+          <a class="btn monthly" href="#">Monthly</a>
+        </div>
+      </div>
+      <div id="daily" class="grid-container active day">
+        <div class="grid1 grid">
+          <div class="border">
+            <img src="./images/icon-work.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Work</p>
+              <a href="#">...</a>
+            </div>  
+            <div class="time">
+              <h2> 5hrs</h2>
+              <h4> Previous day - 7hrs</h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid2 grid">
+          <div class="border">
+            <img src="./images/icon-play.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Play</p>
+              <a href="#">...</a>
+            </div>
+            <div class="time">
+              <h2>1hr</h2>
+              <h4>Previous day - 2hrs</h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid3 grid">
+          <div class="border">
+            <img src="./images/icon-study.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Study</p>
+              <a href="#">...</a>
+            </div>
+            <div class="time">
+              <h2>0hrs</h2>
+              <h4>Previous day - 1hr</h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid4 grid">
+          <div class="border">
+            <img src="./images/icon-exercise.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Exercise</p>
+              <a href="#">...</a>
+            </div>
+            <div class="time">
+              <h2>1hr</h2>
+              <h4>Previous day - 1hr</h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid5 grid">
+          <div class="border">
+            <img src="./images/icon-social.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Social</p>
+              <a href="#">...</a>
+            </div>
+            <div class="time">
+              <h2>1hr</h2>
+              <h4>Previous day - 3hrs</h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid6 grid">
+          <div class="border">
+            <img src="./images/icon-self-care.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Self Care</p>
+              <a href="#">...</a>
+            </div>
+            <div class="time">
+              <h2>0hrs</h2>
+              <h4>Previous day - 1hrs</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="weekly" class="grid-container week">
+        <div class="grid1 grid">
+          <div class="border">
+            <img src="./images/icon-work.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Work</p>
+              <a href="#">...</a>
+            </div>
+            <div class="time">
+              <h2> 32hrs</h2>
+              <h4> Last week - 36hrs</h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid2 grid">
+          <div class="border">
+            <img src="./images/icon-play.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Play</p>
+              <a href="#">...</a>
+            </div>
+            <div class="time">
+              <h2>10hr</h2>
+              <h4>Last week - 8hrs</h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid3 grid">
+          <div class="border">
+            <img src="./images/icon-study.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Study</p>
+              <a href="#">...</a>
+            </div>
+            <div class="time">
+              <h2>4hrs</h2>
+              <h4>Last week - 7hr</h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid4 grid">
+          <div class="border">
+            <img src="./images/icon-exercise.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Exercise</p>
+              <a href="#">...</a>
+            </div>
+            <div class="time">
+              <h2>4hr</h2>
+              <h4>Last week - 5hr</h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid5 grid">
+          <div class="border">
+            <img src="./images/icon-social.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Social</p>
+              <a href="#">...</a>
+            </div>
+            <div class="time">
+              <h2>5hr</h2>
+              <h4>Last week - 10hrs</h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid6 grid">
+          <div class="border">
+            <img src="./images/icon-self-care.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Self Care</p>
+              <a href="#">...</a>
+            </div>
+            <div class="time">
+              <h2>2hrs</h2>
+              <h4>Last week - 2hrs</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="monthly" class="grid-container month">
+        <div class="grid1 grid">
+          <div class="border">
+            <img src="./images/icon-work.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Work</p>
+              <a href="#">...</a>
+            </div>
+            <div class="time">
+              <h2> 103hrs</h2>
+              <h4> Last Month - 128hrs</h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid2 grid">
+          <div class="border">
+            <img src="./images/icon-play.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Play</p>
+              <a>...</a>
+            </div>
+            <div class="time">
+              <h2>23hr</h2>
+              <h4>Last Month - 29hrs</h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid3 grid">
+          <div class="border">
+            <img src="./images/icon-study.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Study</p>
+              <a>...</a>
+            </div>
+            <div class="time">
+              <h2>13hrs</h2>
+              <h4>Last Month - 19hr</h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid4 grid">
+          <div class="border">
+            <img src="./images/icon-exercise.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Exercise</p>
+              <a>...</a>
+            </div>
+            <div class="time">
+              <h2>11hr</h2>
+              <h4>Last Month - 18hr</h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid5 grid">
+          <div class="border">
+            <img src="./images/icon-social.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Social</p>
+              <a>...</a>
+            </div>
+            <div class="time">
+              <h2>21hr</h2>
+              <h4>Last Month - 23hrs</h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid6 grid">
+          <div class="border">
+            <img src="./images/icon-self-care.svg" alt="">
+          </div>
+          <div class="content">
+            <div class="work">
+              <p>Self Care</p>
+              <a>...</a>
+            </div>
+            <div class="time">
+              <h2>7hrs</h2>
+              <h4>Last Month - 11hrs</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Joe Mwangi</a>.
+  </div>
+</body>
+</html>
